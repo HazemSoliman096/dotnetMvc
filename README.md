@@ -1,1 +1,2 @@
-# Learning and tryin Dotnet MVC from (https://www.yogihosting.com/a)[Yogihosting Website].
+# Learning and trying Dotnet MVC 
+Learning and trying Dotnet MVC from [Yogihosting Website](https://www.yogihosting.com/a).
