@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstApp", "FirstApp\FirstApp.csproj", "{CE426991-8647-4373-BDF8-41C31D24A30E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudRepoApp", "CrudRepoApp\CrudRepoApp.csproj", "{6990CD92-29B7-41F6-AB29-5251C1969BF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{CE426991-8647-4373-BDF8-41C31D24A30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE426991-8647-4373-BDF8-41C31D24A30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE426991-8647-4373-BDF8-41C31D24A30E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6990CD92-29B7-41F6-AB29-5251C1969BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6990CD92-29B7-41F6-AB29-5251C1969BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6990CD92-29B7-41F6-AB29-5251C1969BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6990CD92-29B7-41F6-AB29-5251C1969BF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
