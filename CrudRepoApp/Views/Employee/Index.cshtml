@@ -13,6 +13,8 @@
       <th>Salary</th>
       <th>Department</th>
       <th>Sex</th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -24,6 +26,12 @@
         <td>@e.Salary</td>
         <td>@e.Department</td>
         <td>@e.Sex</td>
+        <td><a asp-action="Update" asp-route-empname="@e.Name">Update</a></td>
+        <td>
+          <form asp-action="Delete" asp-route-empname="@e.Name" method="post">
+            <button type="submit">Delete</button>
+          </form>
+        </td>
       </tr>
     }
   </tbody>
