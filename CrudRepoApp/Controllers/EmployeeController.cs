@@ -7,7 +7,7 @@ namespace CrudRepoApp.Controllers
   {
     public IActionResult Index()
     {
-      return View();
+      return View(Repository.AllEmployees);
     }
 
     // HTTP Get
