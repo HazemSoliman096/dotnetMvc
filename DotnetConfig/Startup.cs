@@ -33,7 +33,7 @@ namespace Dotnetconfig
 
             app.UseRouting();
 
-            app.UseMiddleware<ResponseEditingMiddleware>();
+            //app.UseMiddleware<ResponseEditingMiddleware>();
             app.UseMiddleware<RequestEditingMiddleware>();
             app.UseMiddleware<ShortCircuitMiddleware>();
             app.UseMiddleware<ContentMiddleware>();
