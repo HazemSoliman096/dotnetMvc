@@ -1,3 +1,5 @@
+using Configuation.Middlewares;
+using Dotnetconfig.Middllewares;
 using Dotnetconfig.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,6 +27,11 @@ namespace Dotnetconfig
             }
 
             app.UseRouting();
+
+            app.UseMiddleware<ResponseEditingMiddleware>();
+            app.UseMiddleware<RequestEditingMiddleware>();
+            app.UseMiddleware<ShortCircuitMiddleware>();
+            app.UseMiddleware<ContentMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {
