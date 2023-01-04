@@ -15,4 +15,9 @@ public class HomeController : Controller
     {
         return "Total Users = " + totalUsers.TUsers();
     }
+
+    public IActionResult Error()
+    {
+        return View();
+    }
 }

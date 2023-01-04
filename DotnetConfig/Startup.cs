@@ -24,6 +24,11 @@ namespace Dotnetconfig
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseStatusCodePages();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
             }
 
             app.UseRouting();
