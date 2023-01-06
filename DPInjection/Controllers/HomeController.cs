@@ -6,16 +6,19 @@ namespace DPInjection.Controllers;
 
 public class HomeController : Controller
 {
+
+  private IRepository repository;
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IRepository repo)
     {
         _logger = logger;
+        repository = repo;
     }
 
     public IActionResult Index()
     {
-        return View();
+        return View(repository.Products);
     }
 
     public IActionResult Privacy()
