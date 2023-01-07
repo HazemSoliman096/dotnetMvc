@@ -18,5 +18,11 @@ namespace DPInjection.Models
     public Product this[string name] => products[name];
     public void AddProduct(Product product) => products[product.Name] = product;
     public void DeleteProduct(Product product) => products.Remove(product.Name);
+
+    private string guid = System.Guid.NewGuid().ToString();
+    public override string ToString()
+    {
+      return guid;
+    }
   }
 }
