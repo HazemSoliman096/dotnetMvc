@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace EfCore.Models;
 
@@ -37,25 +35,25 @@ public partial class CompanyContext : DbContext
         });
 
         modelBuilder.Entity<Employee>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("pk_employee");
+       {
+           entity.HasKey(e => e.Id).HasName("pk_employee");
 
-            entity.ToTable("employee", "dbo");
+           entity.ToTable("employee", "dbo");
 
-            entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.Departmentid).HasColumnName("departmentid");
-            entity.Property(e => e.Designation)
-                .HasMaxLength(25)
-                .HasColumnName("designation");
-            entity.Property(e => e.Name)
-                .HasMaxLength(100)
-                .HasColumnName("name");
+           entity.Property(e => e.Id).HasColumnName("id");
+           entity.Property(e => e.Departmentid).HasColumnName("departmentid");
+           entity.Property(e => e.Designation)
+               .HasMaxLength(25)
+               .HasColumnName("designation");
+           entity.Property(e => e.Name)
+               .HasMaxLength(100)
+               .HasColumnName("name");
 
-            entity.HasOne(d => d.Department).WithMany(p => p.Employees)
-                .HasForeignKey(d => d.Departmentid)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("fk_employee");
-        });
+           entity.HasOne(d => d.Department).WithMany(p => p.Employees)
+               .HasForeignKey(d => d.Departmentid)
+               .OnDelete(DeleteBehavior.ClientSetNull)
+               .HasConstraintName("fk_employee");
+       });
 
         OnModelCreatingPartial(modelBuilder);
     }

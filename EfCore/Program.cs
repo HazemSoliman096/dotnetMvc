@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using EfCore.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.services.AddDbContext<CompanyContext>(options =>
+   options.UseNpgsql("Name=connectionString:Company"));
 
 var app = builder.Build();
 
