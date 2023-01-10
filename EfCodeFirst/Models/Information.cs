@@ -4,7 +4,7 @@ namespace EfCodeFirst.Models
 
     public int Id { get; set; }
 
-    Public string Name { get; set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
 
     public string License { get; set; } = string.Empty;
 
