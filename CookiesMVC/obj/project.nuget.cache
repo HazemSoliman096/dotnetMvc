@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jT9Dpcumgk2SIbRcz+LUj+KjMkAzMbv7gZS4xk97yT2jrRmSwtlsS8PaQMud4EVtQWVs4yRaL4VDEEDVhOmfkw==",
+  "success": true,
+  "projectFilePath": "/home/hazem/dev/dotnetMvc/CookiesMVC/CookiesMVC.csproj",
+  "expectedPackageFiles": [
+    "/home/hazem/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.2/microsoft.aspnetcore.app.ref.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
